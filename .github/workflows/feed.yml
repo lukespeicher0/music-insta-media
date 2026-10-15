@@ -21,7 +21,7 @@ jobs:
         run: |
           git config user.name "playcount feeder"
           git config user.email "feeder@users.noreply.github.com"
-          git add -A '*/sent.json' '*/expired.json' '*/pool.json'
+          git add -A  # the feeder only writes sent/expired/pool json; a pathspec that matches nothing would fail the job
           git diff --cached --quiet && exit 0
           git commit -qm "feed buffer"
           for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
