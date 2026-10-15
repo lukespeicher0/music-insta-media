@@ -1,0 +1,87 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Lil Pump hit 31.6M Spotify monthly listeners in an archived Dec 2018 snapshot. Today it's 5.1M. Where did the 2017-18 SoundCloud rap class actually go? 📼\n\nIn 2017-18 the SoundCloud scene produced a run of Spotify superstars: Lil Pump, Trippie Redd, Lil Skies, Ski Mask The Slump God and Lil Xan.\n\nWe compared the highest monthly-listener count in readable Wayback Machine snapshots of their Spotify pages with Oct 15, 2026: Lil Xan 9.0M → 1.2M (−87%), Lil Pump 31.6M → 5.1M (−84%), Ski Mask The Slump God 10M → 4.4M (−56%), Lil Skies 10.3M → 4.7M (−54%).\n\nThe outlier is Trippie Redd: 20.2M in an archived Jun 2021 snapshot, 25.2M today (+25%), with 19.3B lifetime Spotify streams per kworb. Lil Xan's \"Betrayed\" alone has 655.2M streams, and Lil Pump's \"I Love It\" with Kanye West has 781.2M.\n\nNote: archive snapshots are sparse, so real peaks were likely higher than shown.\n\nWho from the SoundCloud era should we look back at next? 👇\n\nData: Spotify monthly listeners + Wayback Machine snapshots of Spotify artist pages + kworb Spotify streams · as of Oct 15, 2026\n\n#soundcloudrap #lilpump #trippieredd #lilskies #hiphop",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0952-soundcloud-rap-look-back/slide_1.png",
+     "metadata": {
+      "altText": "Look back · 2017–18. Where did the SoundCloud rap class go?. Highest archived monthly listeners vs Oct 2026"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0952-soundcloud-rap-look-back/slide_2.png",
+     "metadata": {
+      "altText": "Monthly listeners · highest archived vs Oct 15, 2026. Lil Pump lost 84%. None . None . None . None . None "
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0952-soundcloud-rap-look-back/slide_3.png",
+     "metadata": {
+      "altText": "The sound of 2018. Betrayed. Lil Xan's biggest song has 655.2M Spotify streams. His archived peak was 9.0M monthly listeners in Apr 2018; today it's 1.2M."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0952-soundcloud-rap-look-back/slide_4.png",
+     "metadata": {
+      "altText": "Where are they now. Then vs now. Lil Xan −87%. Lil Pump −84%. Ski Mask The Slump God −56%. Lil Skies −54%. Trippie Redd +25%"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0952-soundcloud-rap-look-back/slide_5.png",
+     "metadata": {
+      "altText": "The outlier. Trippie Redd has more listeners today than in any archived snapshot from the 2018-21 era."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0952-soundcloud-rap-look-back/slide_6.png",
+     "metadata": {
+      "altText": "How we measured. Receipts from the archive"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0952-soundcloud-rap-look-back/slide_7.png",
+     "metadata": {
+      "altText": "Look back. Who should we dig up next?. Send this to whoever had Gucci Gang on repeat in 2018."
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "post",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "carousel",
+ "kind": "organic",
+ "style": "look_back",
+ "artists": [
+  "Lil Pump",
+  "Lil Xan",
+  "Lil Skies",
+  "Ski Mask The Slump God",
+  "Trippie Redd"
+ ],
+ "priority": "normal",
+ "fresh_until": null,
+ "not_before": null,
+ "added": "2026-10-15T13:53:22Z"
+}
