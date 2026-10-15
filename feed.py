@@ -97,7 +97,13 @@ def load_pool(root, tz):
     """Every <id>/pool.json as an item: format, kind organic|promo, style, artists, priority, fresh_until/not_before/added (aware), sent {id,dueAt}|None, expired."""
     items = []
     for f in sorted(Path(root).glob("*/pool.json")):
-        d, j = f.parent, json.loads(f.read_text(encoding="utf-8"))
+        d = f.parent
+        try:
+            j = json.loads(f.read_text(encoding="utf-8"))
+            j["input"], j["format"]
+        except (ValueError, KeyError) as e:  # one bad file must not stop the feeder
+            print("skipping unreadable", f, e)
+            continue
         sent = json.loads((d / "sent.json").read_text(encoding="utf-8")) if (d / "sent.json").exists() else None
         pref = j.get("preferred_date")
         items.append({"id": d.name, "dir": d, "org": j.get("org"), "input": j["input"], "format": j["format"], "kind": j.get("kind") or "organic",
