@@ -1,0 +1,35 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Remi Wolf's \"Bottle\", the opener on her third album Mud (out Oct 9, 2026 on Island Records), is moving 207.1K Spotify streams a day as of Oct 15. 🍾\n\nNME singles out \"Bottle\" and \"Covered In Mud\" and calls the album toned-down, with rough and earthy textures in place of her earlier extravagance. \"Bottle\" has 10.1M streams so far (kworb, Oct 15, 2026).\n\nFastest right now: \"I Won't Cry\" (213.0K a day), \"Bottle\" (207.1K), \"Twiggy\" (121.0K) and \"Soup\" (89.9K). Her biggest song overall is \"Photo ID\" with Dominic Fike at 138.4M streams. Remi Wolf has 6.6M monthly listeners and 1.19B lifetime streams across 80 tracks.\n\nIs Bottle your song of the month? 👇\n\nData: Spotify monthly listeners, kworb Spotify streams, NME · as of Oct 15, 2026\n\n#remiwolf #mud #newmusic #albumrelease #indiepop",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1009-remi-wolf-mud-reel/reel-1792073357.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Remi Wolf"
+ ],
+ "priority": "normal",
+ "fresh_until": "2026-10-27",
+ "not_before": null,
+ "added": "2026-10-15T14:10:12Z"
+}
