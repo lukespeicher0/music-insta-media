@@ -1,0 +1,86 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Grand Theft Auto VI has 18.2M Spotify monthly listeners and only six songs, and it gained 468.0K listeners in a single day (Oct 15, 2026). 🎮\n\nThe page is home to GTAVI: The Album, with six tracks and 59.2M total streams: Morgan Wallen's \"Last Thing You Need\" (20.5M), Travis Scott's \"RHYNO\" (12.4M), Rauw Alejandro's \"Macacoa 2000\" (9.9M) and \"Sexy Magic\" with CA7RIEL & Paco Amoroso, PinkPantheress and Fred again.. (9.7M).\n\nThe Hunger Games page is the other surprise: 6.1M listeners (+275.3K in a day) built on one song, Noah Kahan's \"Draw You Out\" (14.3M streams). Among the biggest one-day gainers: ADÉLA +513.2K, Ashe +511.1K, SIENNA SPIRO +260.1K, Jamie Miller +249.8K (9.9M listeners).\n\nWhich soundtrack page do you think grows next? 👇\n\nData: kworb.net Spotify listener changes and streams, Spotify monthly listeners · Oct 15, 2026\n\n#gta6 #grandtheftautovi #morganwallen #noahkahan #spotifycharts",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1007-gta-vi-listener-gainers/slide_1.png",
+     "metadata": {
+      "altText": "Listener gainers · Oct 15. Spotify's fastest-growing pages include a video game and a movie. Daily monthly-listener gains"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1007-gta-vi-listener-gainers/slide_2.png",
+     "metadata": {
+      "altText": "The video game. Grand Theft Auto VI has 18.2M Spotify listeners and only 6 songs."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1007-gta-vi-listener-gainers/slide_3.png",
+     "metadata": {
+      "altText": "Listeners gained in a day · Oct 15. GTA VI is #3 in daily gains. Monthly-listener gain, one-day change. ADÉLA +513.2K. Ashe +511.1K. Grand Theft Auto VI +468.0K. The Hunger Games +275.3K. SIENNA SPIRO +260.1K. Jamie Miller +249.8K"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1007-gta-vi-listener-gainers/slide_4.png",
+     "metadata": {
+      "altText": "GTA VI's biggest song. Last Thing You Need. Morgan Wallen, from GTAVI: The Album: 20.5M Spotify streams. Travis Scott's \"RHYNO\" has 12.4M."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1007-gta-vi-listener-gainers/slide_5.png",
+     "metadata": {
+      "altText": "Spotify monthly listeners · Oct 15. Growing and big. Five pages gaining 200K+ listeners in a day"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1007-gta-vi-listener-gainers/slide_6.png",
+     "metadata": {
+      "altText": "The movie. One song put The Hunger Games at 6.1M listeners: Noah Kahan's \"Draw You Out\"."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1007-gta-vi-listener-gainers/slide_7.png",
+     "metadata": {
+      "altText": "Momentum board. Who else is growing this fast?. Send this to the friend who still thinks only artists have Spotify pages."
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "post",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "carousel",
+ "kind": "organic",
+ "style": "momentum_board",
+ "artists": [
+  "Grand Theft Auto VI",
+  "The Hunger Games",
+  "Morgan Wallen",
+  "Noah Kahan"
+ ],
+ "priority": "normal",
+ "fresh_until": "2026-10-23",
+ "not_before": null,
+ "added": "2026-10-15T14:08:21Z"
+}
