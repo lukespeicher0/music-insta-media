@@ -1,0 +1,39 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Thekidszn's \"IMPULSIVE\" is at 453.2K Spotify streams a day and sits #4 on Shazam's US discovery chart (Oct 15, 2026). These are the songs people are Shazaming before they chart. 🎧\n\nThe Oct 15 top 10 includes Bulin 47 & Kevin Wai \"Dame Hombro\" (#2), Thekidszn \"IMPULSIVE\" (#4), Kingfishr \"Oh Love\" (#5), Haute & Freddy \"Shy Girl\" (#6) and SIDEPIECE & 95 South \"Can I Ride\" (#8).\n\nBiggest by listeners: SIDEPIECE 5.5M, Kingfishr 3.3M, Thekidszn 2.3M, Bulin 47 1.6M, Haute & Freddy 1.5M (Spotify monthly listeners). Per kworb, \"Can I Ride\" has 9.5M total streams and 306.1K a day, \"Shy Girl\" 15.1M and 47.2K, \"Oh Love\" 4.2M and 36.4K.\n\nWhich one do you think hits the charts first? 👇\n\nData: Shazam US discovery chart (7-day performance, Oct 15, 2026), Spotify monthly listeners and kworb Spotify streams · as of Oct 15, 2026\n\n#shazam #newmusic #sidepiece #kingfishr #musicdiscovery",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0939-shazam-radar-reel/reel-1792071611.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "fresh_finds_radar",
+ "artists": [
+  "Thekidszn",
+  "SIDEPIECE",
+  "Kingfishr",
+  "Haute & Freddy",
+  "Bulin 47"
+ ],
+ "priority": "normal",
+ "fresh_until": "2026-10-24",
+ "not_before": null,
+ "added": "2026-10-15T13:41:28Z"
+}
