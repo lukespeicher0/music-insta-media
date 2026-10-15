@@ -1,0 +1,35 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "2hollis went from 922.4K Spotify monthly listeners (Wayback snapshot, Feb 15, 2025) to 5.2M as of Oct 15, 2026. His fifth album, Pirouette, is out Nov 11. 💿\n\nThe hyperpop-rap artist (signed to Interscope, per Clash) announced Pirouette on Sept 22 with a hand-drawn cover by Yoshitaka Amano. It follows 2025's Star and the singles \"Sex\" (Sept 18) and \"Warhorse\" (Sept 25). Melodic Mag lists 16 tracks.\n\nHis biggest song on Spotify is \"poster boy\" with 222.1M streams, 3.8x the next one (\"jeans\", 58.7M, then \"crush\" at 53.6M). Across 62 tracks he has 750.6M lifetime streams and about 1.0M new streams a day (kworb, Oct 15, 2026).\n\nWill Pirouette push him past 6M listeners? 👇\n\nData: Spotify monthly listeners, Wayback Machine, kworb Spotify streams, albumoftheyear.org · as of Oct 15, 2026\n\n#2hollis #hyperpop #newalbum #pirouette #undergroundmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0957-2hollis-pirouette-reel/reel-1792072658.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "on_the_rise",
+ "artists": [
+  "2hollis"
+ ],
+ "priority": "normal",
+ "fresh_until": "2026-11-11",
+ "not_before": null,
+ "added": "2026-10-15T13:58:33Z"
+}
