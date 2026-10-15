@@ -1,0 +1,119 @@
+{
+ "post_times": [
+  "12:00",
+  "19:00"
+ ],
+ "reel_time": "16:00",
+ "timezone": "America/New_York",
+ "assign_hours": 72,
+ "buffer_limit": 10,
+ "promo": {
+  "min_organic": 5,
+  "min_hours": 48
+ },
+ "pinned": {
+  "2026-10-15-1200": {
+   "style": "limelight",
+   "artists": [
+    "ADÉLA"
+   ],
+   "paid": false
+  },
+  "2026-10-15-1600": {
+   "style": "fresh_finds_radar",
+   "artists": [
+    "maja matusiak"
+   ],
+   "paid": false
+  },
+  "2026-10-15-1900": {
+   "style": "who_gets_paid",
+   "artists": [
+    "Olivia Rodrigo"
+   ],
+   "paid": false
+  },
+  "2026-10-16-1200": {
+   "style": "breakout_moment",
+   "artists": [
+    "Ashe"
+   ],
+   "paid": false
+  },
+  "2026-10-16-1600": {
+   "style": "chart_report",
+   "artists": [
+    "KAROL G"
+   ],
+   "paid": false
+  },
+  "2026-10-16-1900": {
+   "style": "explainer",
+   "artists": [],
+   "paid": false
+  },
+  "2026-10-17-1200": {
+   "style": "limelight",
+   "artists": [
+    "Tinashe"
+   ],
+   "paid": false
+  },
+  "2026-10-17-1600": {
+   "style": "milestones",
+   "artists": [
+    "The Neighbourhood"
+   ],
+   "paid": false
+  },
+  "2026-10-17-1900": {
+   "style": "genre_report",
+   "artists": [
+    "2hollis"
+   ],
+   "paid": false
+  },
+  "2026-10-18-1200": {
+   "style": "look_back",
+   "artists": [
+    "ElyOtto"
+   ],
+   "paid": false
+  },
+  "2026-10-18-1600": {
+   "style": "album_preview",
+   "artists": [
+    "Fontaines D.C."
+   ],
+   "paid": false
+  },
+  "2026-10-18-1900": {
+   "style": "release_scorecard",
+   "artists": [
+    "Cameron Winter"
+   ],
+   "paid": false
+  },
+  "2026-10-19-1200": {
+   "style": "head_to_head",
+   "artists": [
+    "underscores"
+   ],
+   "paid": false
+  },
+  "2026-10-19-1600": {
+   "style": "chart_report",
+   "artists": [
+    "João Gustavo e Murilo"
+   ],
+   "paid": false
+  },
+  "2026-10-19-1900": {
+   "style": "limelight",
+   "artists": [
+    "Fontaines D.C."
+   ],
+   "paid": false
+  }
+ }
+}

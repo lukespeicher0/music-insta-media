@@ -3,7 +3,7 @@ on:
   schedule:
     - cron: "7 */6 * * *"
   push:
-    paths: ["*/buffer.json"]
+    paths: ["*/buffer.json", "*/pool.json", "schedule.json"]  # a new post, "Post next", a removal
   workflow_dispatch:
 permissions:
   contents: write
@@ -21,7 +21,7 @@ jobs:
         run: |
           git config user.name "playcount feeder"
           git config user.email "feeder@users.noreply.github.com"
-          git add -A '*/sent.json'
+          git add -A '*/sent.json' '*/expired.json' '*/pool.json'
           git diff --cached --quiet && exit 0
           git commit -qm "feed buffer"
           for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
