@@ -1,0 +1,96 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Six songs are within days of a big Spotify milestone, and The Weeknd's \"Starboy\" (3.996B streams, 1.9M a day) and Billie Eilish's \"BIRDS OF A FEATHER\" (3.986B) are both at the door of 4 billion. 🏆\n\nThe countdown from kworb's Spotify global daily chart, pulled Oct 15, 2026 (est. dates assume the daily pace holds): Starboy (The Weeknd & Daft Punk) 4B ~Oct 17; Olivia Rodrigo's \"the cure\" 500M ~Oct 18; \"BIRDS OF A FEATHER\" 4B ~Oct 22; Gorillaz's \"Feel Good Inc.\" 1B ~Oct 27; Olivia Dean's \"Man I Need\" 1.5B ~Oct 29; The Chainsmokers & Halsey's \"Closer\" 2.5B ~Nov 2.\n\nTogether the six have 13.4B streams and add about 12.5M a day. \"the cure\" is the fastest mover at 3.53M a day, then \"Man I Need\" (2.52M) and \"BIRDS OF A FEATHER\" (2.13M).\n\nWhich song will be the next to hit 5 billion? 👇\n\nData: kworb.net Spotify global daily chart, Oct 15, 2026; milestone dates are estimates\n\n#spotify #starboy #billieeilish #oliviarodrigo #musicstats",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1000-spotify-milestones/slide_1.png",
+     "metadata": {
+      "altText": "Spotify milestones · as of Oct 15. 6 songs about to cross a big Spotify number. Billions of streams, counted down"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1000-spotify-milestones/slide_2.png",
+     "metadata": {
+      "altText": "The streaming giant. Starboy is still adding 1.9M Spotify streams a day. It sits at 3.996B."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1000-spotify-milestones/slide_3.png",
+     "metadata": {
+      "altText": "Daily Spotify streams · global · Oct 15 pull. Who's moving fastest. Streams per day, the six songs. the cure 3.53M. Man I Need 2.52M. BIRDS OF A FEATHER 2.13M. Starboy 1.87M. Feel Good Inc. 1.31M. Closer 1.17M"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1000-spotify-milestones/slide_4.png",
+     "metadata": {
+      "altText": "Est. date each song crosses its target. The countdown. Starboy ~Oct 17. the cure ~Oct 18. BIRDS OF A FEATHER ~Oct 22. Feel Good Inc. ~Oct 27. Man I Need ~Oct 29. Closer ~Nov 2"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1000-spotify-milestones/slide_5.png",
+     "metadata": {
+      "altText": "Next big one. BIRDS OF A FEATHER. Billie Eilish: 3.986B streams, 2.13M a day. Needs 13.8M more for 4B, about 6.5 days at this pace (est.)."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1000-spotify-milestones/slide_6.png",
+     "metadata": {
+      "altText": "The six together · Oct 15. One chart, 13.4B streams. 13.4B combined Spotify streams, six songs. 12.5M streams per day, combined. 4B club both Starboy and BIRDS OF A FEATHER are at the door of"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1000-spotify-milestones/slide_7.png",
+     "metadata": {
+      "altText": "How we estimated. Every date is an estimate"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-1000-spotify-milestones/slide_8.png",
+     "metadata": {
+      "altText": "Milestones. Which song is next to 5 billion?. Send this to the friend who still plays Starboy on repeat."
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "post",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "carousel",
+ "kind": "organic",
+ "style": "milestones",
+ "artists": [
+  "The Weeknd",
+  "Billie Eilish",
+  "Olivia Rodrigo",
+  "Gorillaz",
+  "Olivia Dean",
+  "The Chainsmokers"
+ ],
+ "priority": "normal",
+ "fresh_until": "2026-10-31",
+ "not_before": null,
+ "added": "2026-10-15T14:01:32Z"
+}
