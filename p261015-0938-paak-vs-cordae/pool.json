@@ -1,0 +1,84 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Anderson .Paak has 22.8M monthly listeners on Spotify. Cordae has 5.5M. Their joint album Heavy Is The Crown is out Oct 23. 👑\n\nThe duo announced the album in August 2026 (via APESHIT / Mass Appeal / EMPIRE, release date per albumoftheyear.org and retailer listings). The link goes back to Cordae's 2019 debut The Lost Boy, where .Paak featured on \"RNP\", which is now Cordae's biggest song with 265.5M Spotify streams (kworb, Oct 15, 2026).\n\nThe gap is real but it's mostly features. .Paak has 9.7B total Spotify streams across 264 tracks, led by Silk Sonic's \"Leave The Door Open\" (1.85B), \"Smokin Out The Window\" (651.8M) and Mac Miller's \"Dang!\" (489.5M). Cordae has 2.4B across 88 tracks. As a lead artist it's 2.50B vs 1.66B, only 1.5x. As a featured artist: 7.2B vs 0.8B.\n\nWho do you think carries the album, the hit-maker or the rapper? 👇\n\nData: Spotify monthly listeners + kworb Spotify stream totals · as of Oct 15, 2026 · release date via albumoftheyear.org\n\n#andersonpaak #cordae #silksonic #hiphop #newalbum",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0938-paak-vs-cordae/slide_1.png",
+     "metadata": {
+      "altText": "Head to head · album out Oct 23. Anderson .Paak has 4x Cordae's audience. Their album drops Oct 23."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0938-paak-vs-cordae/slide_2.png",
+     "metadata": {
+      "altText": "Spotify monthly listeners · Oct 15, 2026. 22.8M vs 5.5M. Heavy Is The Crown, a joint album"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0938-paak-vs-cordae/slide_3.png",
+     "metadata": {
+      "altText": "Biggest songs on Spotify · streams as of Oct 15. Their top songs, ranked. Leave The Door Open 1.85B. Smokin Out The Window 651.8M. Dang! 489.5M. After Last Night 407.2M. RNP 265.5M. Kung Fu 195.5M"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0938-paak-vs-cordae/slide_4.png",
+     "metadata": {
+      "altText": "Where it started. RNP. Anderson .Paak guested on Cordae's 2019 debut The Lost Boy. It's Cordae's biggest song: 265.5M streams."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0938-paak-vs-cordae/slide_5.png",
+     "metadata": {
+      "altText": "Careers side by side · Spotify, Oct 15. Paak vs Cordae in 4 numbers. 9.7B vs 2.4B total Spotify streams, Paak vs Cordae. 264 vs 88 tracks on Spotify. 2.5B vs 1.7B streams as lead artist. 7.2B vs 0.8B streams as a featured artist"
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0938-paak-vs-cordae/slide_6.png",
+     "metadata": {
+      "altText": "The real gap. On their own songs, the gap shrinks from 4x to 1.5x."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261015-0938-paak-vs-cordae/slide_7.png",
+     "metadata": {
+      "altText": "Head to head. Who carries Heavy Is The Crown?. Send this to the friend who'll pick a side before they hear it."
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "post",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "carousel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "Anderson .Paak",
+  "Cordae"
+ ],
+ "priority": "normal",
+ "fresh_until": "2026-10-23",
+ "not_before": null,
+ "added": "2026-10-15T13:38:47Z"
+}
