@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Tate McRae vs Sabrina Carpenter by the numbers (Spotify, as of Oct 20, 2026): Tate's catalog adds 13.8M streams a day to Sabrina's 12.6M, and her new single \"Housewife\" (out Oct 15) is #1 in the US, UK, Canada, Australia and worldwide.\n\nSabrina still leads on listeners, 53.7M vs 43.0M, and has six songs past 1B streams (Tate has two).\n\nWho owns 2026 pop? 👇\n\nData: kworb Spotify artist pages and daily charts (Oct 19-20, 2026), Spotify monthly listeners\n\n#tatemcrae #sabrinacarpenter #housewife #popmusic #spotifycharts",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261020-2331-tate-vs-sabrina-reel/reel-1792553607.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "Tate McRae",
+  "Sabrina Carpenter"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Tate McRae",
+  "title": "Housewife"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-07",
+ "not_before": null,
+ "added": "2026-10-21T03:34:12Z"
+}
