@@ -388,11 +388,13 @@ def main(dry=False):
         print("sent", d.name, res["post"]["dueAt"])
 
     # pool posts
-    texts = {caption(i, m).strip(): i for i in items if not i["sent"] and not i["expired"] for m in ("automatic", "notification")}  # either mode's text is ours
+    qids = {p["id"] for p in queue}
+    lost = lambda i: not i["sent"] or i["sent"]["id"] not in qids  # never recorded, or recorded with an id Buffer no longer has (a run whose commit didn't land)
+    texts = {caption(i, m).strip(): (i, m) for i in items if lost(i) and not i["expired"] for m in ("automatic", "notification")}  # either mode's text is ours
     for p in queue:  # a pool post we created whose sent.json never landed: adopt it instead of making a duplicate
-        i = texts.get(p["text"].strip())
-        if i and p["id"] not in known and not i["sent"]:
-            i["sent"] = {"id": p["id"], "dueAt": p["dueAt"]}
+        i, m = texts.get(p["text"].strip(), (None, None))
+        if i and p["id"] not in known and lost(i):
+            i["sent"] = {"id": p["id"], "dueAt": p["dueAt"], "mode": m if i["format"] == "reel" else "automatic"}  # ponytail: a Reel without a 🎵 line reads as automatic
             if not dry:
                 write(i["dir"] / "sent.json", i["sent"])
     ids = {p["id"] for p in queue}
