@@ -14,6 +14,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main  # the latest queue, not the commit that triggered the run (a queued run would replan from stale sent.json)
       - run: python feed.py
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
