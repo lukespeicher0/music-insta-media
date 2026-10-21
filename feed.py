@@ -119,7 +119,7 @@ def mode(phone):
 def caption(i, how):
     """The text Buffer gets: in notification mode a Reel with a "sound" ({artist, title}: the song to pick in Instagram's music library) gets '🎵 Artist – Title' appended
     (cut to fit 2200 chars; the caption itself is never trimmed). Automatic mode posts the royalty-free track baked into the video, so no line."""
-    text, sound = re.sub(r"(?<!\w)#(\d)", r"No.", i["input"]["text"]), i.get("sound")  # "#1" counts as a hashtag on Instagram
+    text, sound = re.sub(r"(?<!\w)#(\d)", r"No.\1", i["input"]["text"]), i.get("sound")  # "#1" counts as a hashtag on Instagram
     if how != "notification" or i["format"] != "reel" or not (sound and sound.get("artist") and sound.get("title")):
         return text
     line = f"\n\n\U0001F3B5 {sound['artist']} – {sound['title']}"
