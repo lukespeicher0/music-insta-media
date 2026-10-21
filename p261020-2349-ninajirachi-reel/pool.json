@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Ninajirachi's Spotify monthly listeners went from 108.3K (Sep 6, 2024, Wayback Machine) to 1.8M as of Oct 20, 2026: about 17x in 25 months. 💿\n\nThe Australian producer (Nina Jo Wilson) won the 2025 Australian Music Prize for her debut album I Love My Computer, and her biggest song, \"iPod Touch\", has 22.8M Spotify streams. Pitchfork and Turning the Tables both interviewed her.\n\nIs Ninajirachi the future of electronic music? 👇\n\nData: Spotify monthly listeners, Wayback Machine, kworb Spotify streams, Wikipedia · as of Oct 20, 2026\n\n#ninajirachi #electronicmusic #ilovemycomputer #ipodtouch #newmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261020-2349-ninajirachi-reel/reel-1792554610.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "on_the_rise",
+ "artists": [
+  "Ninajirachi"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Ninajirachi",
+  "title": "iPod Touch"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-09",
+ "not_before": null,
+ "added": "2026-10-21T03:50:53Z"
+}
