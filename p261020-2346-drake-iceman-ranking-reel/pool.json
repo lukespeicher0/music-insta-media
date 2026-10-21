@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Drake's 5 biggest songs of 2026 by Spotify streams (as of Oct 20, 2026): 1. \"Janice STFU\" 378.9M, 2. \"National Treasures\" 202.7M, 3. \"Shabang\" 174.7M, 4. \"Whisper My Name\" 157.5M, 5. \"Ran To Atlanta\" 145.0M.\n\nAll five are from Iceman (out May 15, 2026) and add up to 1.06B streams. The 2025 pre-release singles \"What Did I Miss?\" and \"Which One\" are left out.\n\nDid we get the order right? 👇\n\nData: kworb Spotify artist page for Drake (Oct 20, 2026); tracklists via Iceman coverage\n\n#drake #iceman #janicestfu #hiphop #spotifystreams",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261020-2346-drake-iceman-ranking-reel/reel-1792554384.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "chart_report",
+ "artists": [
+  "Drake"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Drake",
+  "title": "Janice STFU"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-09",
+ "not_before": null,
+ "added": "2026-10-21T03:47:07Z"
+}
