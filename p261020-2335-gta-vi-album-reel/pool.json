@@ -1,0 +1,42 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "GTA VI: The Album isn't out until Nov 19, but 9 of its 34 songs are already on Spotify with 93.4M streams (as of Oct 20, 2026).\n\nJustice's \"Flower In A Hurricane\" with Tame Impala, SZA and King Gizzard & The Lizard Wizard was #41 in the US on Oct 19. Fuerza Regida's \"Suzuki\" is #3 in Mexico. Morgan Wallen's \"Last Thing You Need\" leads in total streams at 27.7M.\n\nBest GTA VI song so far? 👇\n\nData: kworb Spotify daily charts and artist page (Oct 19-20, 2026); release details via Rockstar/Atlantic reports\n\n#gta6 #gtavi #justice #fuerzaregida #soundtrack",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261020-2335-gta-vi-album-reel/reel-1792553769.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "chart_report",
+ "artists": [
+  "Justice",
+  "Fuerza Regida",
+  "Morgan Wallen"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Justice",
+  "title": "Flower In A Hurricane"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-07",
+ "not_before": null,
+ "added": "2026-10-21T03:36:50Z"
+}
