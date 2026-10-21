@@ -8,7 +8,7 @@ Two kinds of posts live in this repo:
 Buffer's free plan holds 10 scheduled posts per channel. A sent post gets <id>/sent.json; a pool post that went stale gets expired.json.
 Settings come from schedule.json (written by insta.py from config.json); `python feed.py --dry` prints the plan without writing anything.
 """
-import datetime as dt, glob, json, os, sys, time, urllib.request
+import datetime as dt, glob, json, os, re, sys, time, urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -119,7 +119,7 @@ def mode(phone):
 def caption(i, how):
     """The text Buffer gets: in notification mode a Reel with a "sound" ({artist, title}: the song to pick in Instagram's music library) gets '🎵 Artist – Title' appended
     (cut to fit 2200 chars; the caption itself is never trimmed). Automatic mode posts the royalty-free track baked into the video, so no line."""
-    text, sound = i["input"]["text"], i.get("sound")
+    text, sound = re.sub(r"(?<!\w)#(\d)", r"No.", i["input"]["text"]), i.get("sound")  # "#1" counts as a hashtag on Instagram
     if how != "notification" or i["format"] != "reel" or not (sound and sound.get("artist") and sound.get("title")):
         return text
     line = f"\n\n\U0001F3B5 {sound['artist']} – {sound['title']}"
