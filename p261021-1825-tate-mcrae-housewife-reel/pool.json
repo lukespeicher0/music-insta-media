@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Tate McRae's \"Housewife\" debuted at No. 1 on Spotify's global chart with 5.67M streams on Oct 16, 2026, her biggest streaming debut yet.\n\nHer first single of 2026 after the album So Close to What, it beat the 4.13M debut of \"Tit for Tat\" (2025), then hit No. 1 again on Oct 19 with 5.65M streams, a day after she performed it at the Victoria's Secret Fashion Show (Oct 18). She has 43M monthly listeners (Oct 20).\n\nWill Housewife become Tate McRae's biggest song? 👇\n\nData: kworb Spotify global daily chart, Spotify, Billboard · as of Oct 20, 2026\n\n#tatemcrae #housewife #popmusic #spotifycharts #newmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261021-1825-tate-mcrae-housewife-reel/reel-1792621678.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Tate McRae"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Tate McRae",
+  "title": "Housewife"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-03",
+ "not_before": null,
+ "added": "2026-10-21T22:30:01Z"
+}
