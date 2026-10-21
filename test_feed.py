@@ -47,6 +47,56 @@ except Exception:
 assert feed.when("2026-10-23", TZ, True) == dt.datetime(2026, 10, 23, 23, 59, 59, tzinfo=TZ) and feed.when("2026-10-23", TZ) == dt.datetime(2026, 10, 23, tzinfo=TZ)
 assert feed.when("2026-10-23T08:00", TZ) == ny(2026, 10, 23, 8) and feed.when(None, TZ) is None
 
+# --- slot_pattern: Day A = Reel 12:00 + Reel 19:00, Day B = Reel 12:00 + carousel 19:00, alternating from pattern_anchor (2026-10-24 = A); old times before it
+PAT = {**feed.DEFAULTS, "slot_pattern": [[["12:00", "reel"], ["19:00", "reel"]], [["12:00", "reel"], ["19:00", "carousel"]]], "pattern_anchor": "2026-10-24"}
+fmt_day = lambda d: [(t, f) for t, f in feed.day_slots(d, PAT)]
+D = dt.date
+assert fmt_day(D(2026, 10, 24)) == [("12:00", "reel"), ("19:00", "reel")] and fmt_day(D(2026, 10, 25)) == [("12:00", "reel"), ("19:00", "carousel")]
+assert fmt_day(D(2026, 10, 26)) == fmt_day(D(2026, 10, 24)) and fmt_day(D(2026, 11, 7)) == fmt_day(D(2026, 10, 24)) and fmt_day(D(2026, 11, 8)) == fmt_day(D(2026, 10, 25))
+assert fmt_day(D(2026, 10, 23)) == [("12:00", "carousel"), ("19:00", "carousel"), ("16:00", "reel")]  # transition: old times before the anchor
+assert feed.day_slots(D(2026, 10, 25), SCHED) == feed.day_slots(D(2026, 10, 23), SCHED)  # no pattern in schedule.json (old file): old behaviour forever
+t = feed.slots_between(ny(2026, 10, 22, 9), PAT, 24 * 4)  # Oct 22 9:00 .. Oct 26 9:00
+assert [(d, f) for d, f in t if d >= ny(2026, 10, 23, 0)] == [(ny(2026, 10, 23, 12), "carousel"), (ny(2026, 10, 23, 16), "reel"), (ny(2026, 10, 23, 19), "carousel"),
+    (ny(2026, 10, 24, 12), "reel"), (ny(2026, 10, 24, 19), "reel"), (ny(2026, 10, 25, 12), "reel"), (ny(2026, 10, 25, 19), "carousel")], t
+# DST: Nov 1 (A) noon is 17:00Z, its 19:00 is 00:00Z; Mar 13 2027 is an A day, Mar 14 a B day and its 19:00 carousel is 23:00Z (EDT)
+t = feed.slots_between(ny(2026, 10, 31, 0), PAT, 24 * 3)
+assert [(d.strftime("%m-%d %H:%MZ"), f) for d, f in t] == [("10-31 16:00Z", "reel"), ("10-31 23:00Z", "carousel"), ("11-01 17:00Z", "reel"), ("11-02 00:00Z", "reel"),
+    ("11-02 17:00Z", "reel"), ("11-03 00:00Z", "carousel")], t
+t = feed.slots_between(ny(2027, 3, 13, 0), PAT, 24 * 3)
+assert [(d.strftime("%m-%d %H:%MZ"), f) for d, f in t][:4] == [("03-13 17:00Z", "reel"), ("03-14 00:00Z", "reel"), ("03-14 16:00Z", "reel"), ("03-14 23:00Z", "carousel")], t
+# a plan on pattern days: Reels take the Reel slots, carousels only the Day B evening
+pr = [item("reel") for _ in range(4)] + [item("carousel") for _ in range(2)]
+a = feed.plan(pr, [], feed.slots_between(ny(2026, 10, 23, 20), PAT, 72), ny(2026, 10, 23, 20), RULES)
+got = {x["id"]: x["due"] for x in a}
+rids = {p["id"] for p in pr[:4]}
+assert sorted(d for i, d in got.items() if i in rids) == [ny(2026, 10, 24, 12), ny(2026, 10, 24, 19), ny(2026, 10, 25, 12), ny(2026, 10, 26, 12)], got
+assert [d for i, d in got.items() if i in {p["id"] for p in pr[4:]}] == [ny(2026, 10, 25, 19)]  # one carousel in 72h: the only carousel slot
+# days of content walks the real pattern
+dc = lambda fmt, have, start=D(2026, 10, 24): feed.days_of(PAT, fmt, have, start)
+assert dc("reel", 5) == 3 and dc("reel", 4) == 2.5 and dc("reel", 0) == 0 and dc("carousel", 2) == 5 and dc("carousel", 0) == 1 and dc("carousel", 1) == 3  # A free, B, A free, B...
+assert dc("reel", 3, D(2026, 10, 25)) == 2 and feed.days_of(SCHED, "reel", 3, D(2026, 10, 24)) == 3 and feed.days_of(SCHED, "carousel", 4, D(2026, 10, 24)) == 2  # old pattern: 1 Reel + 2 carousels a day
+
+# --- phone mode: Reels already in Buffer in the wrong scheduling mode get re-sent (> 30 min away), carousels and legacy posts never
+iso_ = lambda d: feed.iso(d)
+reel_a = item("reel", sent={"id": "r1", "dueAt": iso_(NOW + 5 * H)})  # no "mode" = automatic
+reel_n = item("reel", sent={"id": "r2", "dueAt": iso_(NOW + 6 * H), "mode": "notification"})
+reel_soon = item("reel", sent={"id": "r3", "dueAt": iso_(NOW + dt.timedelta(minutes=20))})
+car = item("carousel", sent={"id": "c1", "dueAt": iso_(NOW + 7 * H)})
+allr = [reel_a, reel_n, reel_soon, car, item("reel")]
+assert feed.mode(True) == "notification" and feed.mode(False) == "automatic"
+assert [i["id"] for i in feed.wrong_mode(allr, NOW, True)] == [reel_a["id"]]  # phone on: the automatic one; the 20-minute one is too close; carousel untouched
+assert [i["id"] for i in feed.wrong_mode(allr, NOW, False)] == [reel_n["id"]]  # phone off: the notification one (a Reel left in notification mode would never post)
+# the song line: notification mode only, Reels only, cut to 2200 chars, caption itself untouched
+snd = {"artist": "Remi Wolf", "title": "Photo ID"}
+rc = {**item("reel"), "input": {"text": "Hook line.\n\n#a"}, "sound": snd}
+line = "\n\n\U0001F3B5 Remi Wolf – Photo ID"
+assert feed.caption(rc, "notification") == "Hook line.\n\n#a" + line and feed.caption(rc, "automatic") == "Hook line.\n\n#a"
+assert feed.caption({**rc, "sound": None}, "notification") == "Hook line.\n\n#a" and feed.caption({**rc, "format": "carousel"}, "notification") == "Hook line.\n\n#a"
+long_ = {**rc, "input": {"text": "x" * 2190}}
+assert feed.caption(long_, "notification") == "x" * 2190 + line[:10] and len(feed.caption(long_, "notification")) == 2200
+assert feed.caption({**rc, "input": {"text": "x" * 2195}}, "notification") == "x" * 2195  # no room for a useful line: skipped, never trimming the caption
+assert feed.wrong_mode([{**reel_a, "sent": {**reel_a["sent"], "mode": "notification"}}], NOW, True) == []
+
 # --- ordering: next, then time-sensitive soonest-expiring, then evergreen oldest first
 old, new = item(), item()
 soon, later = item(fu=NOW + 30 * H), item(fu=NOW + 60 * H)

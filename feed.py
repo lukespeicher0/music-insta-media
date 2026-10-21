@@ -1,8 +1,9 @@
 """Runs every 6 hours (and on every push of a pool.json / buffer.json) on GitHub Actions: keeps Buffer's queue topped up, so the PC can be off.
 
 Two kinds of posts live in this repo:
-  * POOL posts  <id>/pool.json   (id = pYYMMDD-HHMM-slug): no time of their own. plan() assigns them to the fixed daily slots
-    (carousels at post_times, the Reel at reel_time, America/New_York) for the next assign_hours, best fit first.
+  * POOL posts  <id>/pool.json   (id = pYYMMDD-HHMM-slug): no time of their own. plan() assigns them to the daily slots (America/New_York) for the
+    next assign_hours, best fit first. Slots: schedule.json slot_pattern (alternating days of [time, format]) from pattern_anchor on; before it
+    (or without a pattern) post_times = carousels + reel_time = Reel.
   * LEGACY slot posts  YYYY-MM-DD-HHMM/buffer.json: a fixed dueAt ("pinned"). Fed to Buffer as before, never moved or bumped.
 Buffer's free plan holds 10 scheduled posts per channel. A sent post gets <id>/sent.json; a pool post that went stale gets expired.json.
 Settings come from schedule.json (written by insta.py from config.json); `python feed.py --dry` prints the plan without writing anything.
@@ -15,7 +16,7 @@ UA = {"User-Agent": "Mozilla/5.0"}
 UTC = dt.timezone.utc
 EPOCH = dt.datetime(1970, 1, 1, tzinfo=UTC)
 DEFAULTS = {"post_times": ["12:00", "19:00"], "reel_time": "16:00", "timezone": "America/New_York", "assign_hours": 72, "buffer_limit": 10,
-            "promo": {"min_organic": 5, "min_hours": 48}, "pinned": {}}
+            "promo": {"min_organic": 5, "min_hours": 48}, "pinned": {}, "reel_phone_mode": False}
 
 
 # ---------- time ----------
@@ -75,20 +76,61 @@ def schedule(root=None):
     return {**DEFAULTS, **(json.loads(f.read_text(encoding="utf-8")) if f.exists() else {})}
 
 
+def day_slots(day, sched):
+    """[(HH:MM, 'carousel'|'reel')] posted on one local date: slot_pattern[(days since pattern_anchor) % len] from the anchor on, post_times + reel_time before it or without a pattern."""
+    pat, a = sched.get("slot_pattern"), sched.get("pattern_anchor")
+    if pat and a and day >= dt.date.fromisoformat(a):
+        return [tuple(x) for x in pat[(day - dt.date.fromisoformat(a)).days % len(pat)]]
+    return [(t, "carousel") for t in sched["post_times"]] + [(sched["reel_time"], "reel")]
+
+
 def slots_between(now, sched, hours=None, skip=15):
     """[(due UTC, 'carousel'|'reel')] for every slot from now+skip minutes to now+hours, in sched's timezone (DST-aware)."""
     tz, hours = tzinfo(sched["timezone"]), hours or sched["assign_hours"]
     lo, hi = now + dt.timedelta(minutes=skip), now + dt.timedelta(hours=hours)
-    times = [(t, "carousel") for t in sched["post_times"]] + [(sched["reel_time"], "reel")]
     out = []
     for n in range(hours // 24 + 3):
         day = now.astimezone(tz).date() + dt.timedelta(days=n - 1)
-        for t, fmt in times:
+        for t, fmt in day_slots(day, sched):
             h, m = map(int, t.split(":"))
             due = dt.datetime(day.year, day.month, day.day, h, m, tzinfo=tz).astimezone(UTC)
             if lo <= due <= hi:
                 out.append((due, fmt))
     return sorted(out)
+
+
+def days_of(sched, fmt, have, start, cap=60):
+    """Days of content `have` posts of one format cover, walking the real pattern from date `start`: a day needs as many as it has slots of that format (0 = free)."""
+    n = 0.0
+    for k in range(cap):
+        need = sum(1 for _, f in day_slots(start + dt.timedelta(days=k), sched) if f == fmt)
+        if have >= need:
+            have, n = have - need, n + 1
+        else:
+            return n + have / need
+    return n
+
+
+def mode(phone):
+    """Buffer schedulingType for a Reel: 'notification' = Buffer's phone app reminds the owner at post time, 'automatic' = Buffer posts it."""
+    return "notification" if phone else "automatic"
+
+
+def caption(i, how):
+    """The text Buffer gets: in notification mode a Reel with a "sound" ({artist, title}: the song to pick in Instagram's music library) gets '🎵 Artist – Title' appended
+    (cut to fit 2200 chars; the caption itself is never trimmed). Automatic mode posts the royalty-free track baked into the video, so no line."""
+    text, sound = i["input"]["text"], i.get("sound")
+    if how != "notification" or i["format"] != "reel" or not (sound and sound.get("artist") and sound.get("title")):
+        return text
+    line = f"\n\n\U0001F3B5 {sound['artist']} – {sound['title']}"
+    room = 2200 - len(text)
+    return text + (line if len(line) <= room else line[:room] if room > 8 else "")
+
+
+def wrong_mode(items, now, phone, gap=30):
+    """Pool Reels already in Buffer whose recorded mode (sent.json; none = automatic) differs from the setting and that are > gap minutes away: re-send them."""
+    return [i for i in items if i["format"] == "reel" and i["sent"] and i["sent"].get("dueAt") and (i["sent"].get("mode") or "automatic") != mode(phone)
+            and parse(i["sent"]["dueAt"]) > now + dt.timedelta(minutes=gap)]
 
 
 # ---------- the pool ----------
@@ -107,7 +149,7 @@ def load_pool(root, tz):
         sent = json.loads((d / "sent.json").read_text(encoding="utf-8")) if (d / "sent.json").exists() else None
         pref = j.get("preferred_date")
         items.append({"id": d.name, "dir": d, "org": j.get("org"), "input": j["input"], "format": j["format"], "kind": j.get("kind") or "organic",
-                      "style": j.get("style"), "artists": j.get("artists") or [], "priority": j.get("priority") or "normal",
+                      "style": j.get("style"), "artists": j.get("artists") or [], "sound": j.get("sound"), "priority": j.get("priority") or "normal",
                       "fresh_until": when(j.get("fresh_until"), tz, True), "not_before": when(j.get("not_before"), tz),
                       "added": when(j.get("added"), tz) or EPOCH, "preferred_date": dt.date.fromisoformat(str(pref)[:10]) if pref else None,
                       "sent": sent if sent and sent.get("id") else None, "expired": (d / "expired.json").exists()})
@@ -346,7 +388,7 @@ def main(dry=False):
         print("sent", d.name, res["post"]["dueAt"])
 
     # pool posts
-    texts = {i["input"]["text"].strip(): i for i in items if not i["sent"] and not i["expired"]}
+    texts = {caption(i, m).strip(): i for i in items if not i["sent"] and not i["expired"] for m in ("automatic", "notification")}  # either mode's text is ours
     for p in queue:  # a pool post we created whose sent.json never landed: adopt it instead of making a duplicate
         i = texts.get(p["text"].strip())
         if i and p["id"] not in known and not i["sent"]:
@@ -360,6 +402,23 @@ def main(dry=False):
             if not dry:
                 (i["dir"] / "sent.json").unlink(missing_ok=True)
             i["sent"] = None
+    phone = bool(sched.get("reel_phone_mode"))
+    for i in wrong_mode(items, now, phone):  # the phone-mode switch was flipped: Reels already in Buffer must follow it (same slot), else a notification Reel never posts itself
+        old, due = i["sent"], parse(i["sent"]["dueAt"])
+        print("re-sending", i["id"], "as", mode(phone), "(was", (old.get("mode") or "automatic") + ")", "- dry" if dry else "")
+        if dry:
+            continue
+        delete(old["id"])
+        (i["dir"] / "sent.json").unlink(missing_ok=True)
+        queue = [p for p in queue if p["id"] != old["id"]]
+        i["sent"] = None
+        res = buffer(CREATE, {"in": {**i["input"], "text": caption(i, mode(phone)), "dueAt": iso(due), "schedulingType": mode(phone)}})["createPost"]
+        if "post" not in res:
+            print("Buffer refused", i["id"], res)  # no sent.json: it is back in the pool and the planner places it again
+            continue
+        i["sent"] = {"id": res["post"]["id"], "dueAt": res["post"]["dueAt"], "mode": mode(phone)}
+        write(i["dir"] / "sent.json", i["sent"])
+        queue.append(res["post"])
     by_sent = {i["sent"]["id"]: i for i in items if i["sent"]}
     pin = sched.get("pinned", {})
 
@@ -407,11 +466,12 @@ def main(dry=False):
                 (byid[d["id"]]["dir"] / "sent.json").unlink(missing_ok=True)
         for p in [p for p in stale if parse(p["dueAt"]) == due]:
             delete(p["id"])
-        res = buffer(CREATE, {"in": {**i["input"], "dueAt": iso(due)}})["createPost"]
+        how = mode(phone) if i["format"] == "reel" else "automatic"  # carousels always post themselves
+        res = buffer(CREATE, {"in": {**i["input"], "text": caption(i, how), "dueAt": iso(due), "schedulingType": how}})["createPost"]
         if "post" not in res:
             print("Buffer refused", i["id"], res)
             break
-        write(i["dir"] / "sent.json", {"id": res["post"]["id"], "dueAt": res["post"]["dueAt"]})
+        write(i["dir"] / "sent.json", {"id": res["post"]["id"], "dueAt": res["post"]["dueAt"], "mode": how})
         if i["priority"] == "next":  # the wish is granted
             f = i["dir"] / "pool.json"
             j = json.loads(f.read_text(encoding="utf-8"))
