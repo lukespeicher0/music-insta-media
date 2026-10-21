@@ -192,4 +192,9 @@ assert run([old, nx, r], pins) == []
 a = run([item() for _ in range(5)], room=2)
 assert len(sends(a)) == 2
 assert len(sends(run([b, nx], [occ_pool], room=0))) == 1
+# --- a silent Reel (song added by hand in Instagram) only goes out in phone mode
+quiet = {**item("reel"), "silent": True}
+assert quiet["id"] not in ids(run([quiet])), "silent Reel must not auto-post"
+assert quiet["id"] in ids(run([quiet], phone=True))
+
 print("ok")

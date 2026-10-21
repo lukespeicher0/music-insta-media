@@ -149,7 +149,7 @@ def load_pool(root, tz):
         sent = json.loads((d / "sent.json").read_text(encoding="utf-8")) if (d / "sent.json").exists() else None
         pref = j.get("preferred_date")
         items.append({"id": d.name, "dir": d, "org": j.get("org"), "input": j["input"], "format": j["format"], "kind": j.get("kind") or "organic",
-                      "style": j.get("style"), "artists": j.get("artists") or [], "sound": j.get("sound"), "priority": j.get("priority") or "normal",
+                      "style": j.get("style"), "artists": j.get("artists") or [], "sound": j.get("sound"), "silent": bool(j.get("silent")), "priority": j.get("priority") or "normal",
                       "fresh_until": when(j.get("fresh_until"), tz, True), "not_before": when(j.get("not_before"), tz),
                       "added": when(j.get("added"), tz) or EPOCH, "preferred_date": dt.date.fromisoformat(str(pref)[:10]) if pref else None,
                       "sent": sent if sent and sent.get("id") else None, "expired": (d / "expired.json").exists()})
@@ -223,8 +223,8 @@ def plan(items, scheduled, slots, now, rules):
     tl = sorted((dict(e) for e in scheduled), key=lambda e: e["due"])
     occ = {e["due"]: e for e in tl}
 
-    def fits(i, due):
-        return ((not i["not_before"] or i["not_before"] <= due) and (not i["fresh_until"] or due <= i["fresh_until"])
+    def fits(i, due):  # a silent Reel only goes out as a phone reminder (the owner adds the song in Instagram)
+        return ((not i.get("silent") or rules.get("phone")) and (not i["not_before"] or i["not_before"] <= due) and (not i["fresh_until"] or due <= i["fresh_until"])
                 and (i["kind"] != "promo" or not i["preferred_date"] or i["preferred_date"] <= due.astimezone(tz).date()))
 
     def put(i, due, drop, warn=None):
@@ -412,6 +412,9 @@ def main(dry=False):
         (i["dir"] / "sent.json").unlink(missing_ok=True)
         queue = [p for p in queue if p["id"] != old["id"]]
         i["sent"] = None
+        if i.get("silent") and not phone:  # phone mode switched off: a silent Reel must not auto-post; back to the pool until phone mode is on again
+            print("silent Reel back to the pool:", i["id"])
+            continue
         res = buffer(CREATE, {"in": {**i["input"], "text": caption(i, mode(phone)), "dueAt": iso(due), "schedulingType": mode(phone)}})["createPost"]
         if "post" not in res:
             print("Buffer refused", i["id"], res)  # no sent.json: it is back in the pool and the planner places it again
@@ -439,7 +442,7 @@ def main(dry=False):
             stale.append(p)  # not ours: its minute counts as free, and the post goes if we need that minute
     entries += [pinned(parse(j["input"]["dueAt"])) for j in pending]
     entries += [e for e in pool_entries(items, now) if e["id"] is None]  # recent past pool posts: context for the ratio/variety rules
-    rules = {"tz": tz, "room": limit - len(queue), "urgent_hours": 12, "bump_minutes": 30,
+    rules = {"tz": tz, "room": limit - len(queue), "phone": phone, "urgent_hours": 12, "bump_minutes": 30,
              "promo_min_organic": sched["promo"]["min_organic"], "promo_min_hours": sched["promo"]["min_hours"]}
     acts = plan(items, entries, slots_between(now, sched), now, rules)
     if not acts:
