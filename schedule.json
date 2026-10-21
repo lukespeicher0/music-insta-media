@@ -27,7 +27,7 @@
   ]
  ],
  "pattern_anchor": "2026-10-24",
- "reel_phone_mode": false,
+ "reel_phone_mode": true,
  "timezone": "America/New_York",
  "assign_hours": 72,
  "buffer_limit": 10,
