@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "ADÉLA vs Olivia Dean, by the numbers (Spotify, as of Oct 20, 2026): ADÉLA adds 561K monthly listeners a day to Dean's 165K, and her \"Nicole Kidman\" is #1 on the US weekly chart (8.8M streams, week of Oct 15) with \"Ain't In LA\" at #3 worldwide.\n\nDean still leads on listeners (52.4M vs 39.9M) and lifetime streams (9.3B vs 826.5M), and \"Man I Need\" is #17 globally after 60 weeks on the chart.\n\nWhose breakout is bigger? 👇\n\nData: kworb Spotify listeners, weekly charts and artist pages (Oct 15-20, 2026), Spotify monthly listeners\n\n#adela #oliviadean #nicolekidman #manineed #spotifycharts",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261020-2337-adela-vs-olivia-dean-reel/reel-1792553917.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "ADÉLA",
+  "Olivia Dean"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "ADÉLA",
+  "title": "Nicole Kidman"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-08",
+ "not_before": null,
+ "added": "2026-10-21T03:39:16Z"
+}
