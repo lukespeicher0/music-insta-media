@@ -112,7 +112,7 @@ def days_of(sched, fmt, have, start, cap=60):
 
 
 def mode(phone):
-    """Buffer schedulingType for a Reel: 'notification' = Buffer's phone app reminds the owner at post time, 'automatic' = Buffer posts it."""
+    """Buffer schedulingType for every post (Reels and carousels, owner 2026-10-23: posting it yourself reaches ~4x more): 'notification' = Buffer's phone app reminds the owner at post time, 'automatic' = Buffer posts it."""
     return "notification" if phone else "automatic"
 
 
@@ -128,8 +128,8 @@ def caption(i, how):
 
 
 def wrong_mode(items, now, phone, gap=30):
-    """Pool Reels already in Buffer whose recorded mode (sent.json; none = automatic) differs from the setting and that are > gap minutes away: re-send them."""
-    return [i for i in items if i["format"] == "reel" and i["sent"] and i["sent"].get("dueAt") and (i["sent"].get("mode") or "automatic") != mode(phone)
+    """Pool posts already in Buffer whose recorded mode (sent.json; none = automatic) differs from the setting and that are > gap minutes away: re-send them."""
+    return [i for i in items if i["sent"] and i["sent"].get("dueAt") and (i["sent"].get("mode") or "automatic") != mode(phone)
             and parse(i["sent"]["dueAt"]) > now + dt.timedelta(minutes=gap)]
 
 
@@ -471,7 +471,7 @@ def main(dry=False):
                 (byid[d["id"]]["dir"] / "sent.json").unlink(missing_ok=True)
         for p in [p for p in stale if parse(p["dueAt"]) == due]:
             delete(p["id"])
-        how = mode(phone) if i["format"] == "reel" else "automatic"  # carousels always post themselves
+        how = mode(phone)   # every post follows phone mode (carousels too)
         res = buffer(CREATE, {"in": {**i["input"], "text": caption(i, how), "dueAt": iso(due), "schedulingType": how}})["createPost"]
         if "post" not in res:
             print("Buffer refused", i["id"], res)

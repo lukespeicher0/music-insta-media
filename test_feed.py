@@ -76,7 +76,7 @@ dc = lambda fmt, have, start=D(2026, 10, 24): feed.days_of(PAT, fmt, have, start
 assert dc("reel", 5) == 3 and dc("reel", 4) == 2.5 and dc("reel", 0) == 0 and dc("carousel", 2) == 5 and dc("carousel", 0) == 1 and dc("carousel", 1) == 3  # A free, B, A free, B...
 assert dc("reel", 3, D(2026, 10, 25)) == 2 and feed.days_of(SCHED, "reel", 3, D(2026, 10, 24)) == 3 and feed.days_of(SCHED, "carousel", 4, D(2026, 10, 24)) == 2  # old pattern: 1 Reel + 2 carousels a day
 
-# --- phone mode: Reels already in Buffer in the wrong scheduling mode get re-sent (> 30 min away), carousels and legacy posts never
+# --- phone mode: posts (Reels and carousels) already in Buffer in the wrong scheduling mode get re-sent (> 30 min away), legacy posts never
 iso_ = lambda d: feed.iso(d)
 reel_a = item("reel", sent={"id": "r1", "dueAt": iso_(NOW + 5 * H)})  # no "mode" = automatic
 reel_n = item("reel", sent={"id": "r2", "dueAt": iso_(NOW + 6 * H), "mode": "notification"})
@@ -84,7 +84,7 @@ reel_soon = item("reel", sent={"id": "r3", "dueAt": iso_(NOW + dt.timedelta(minu
 car = item("carousel", sent={"id": "c1", "dueAt": iso_(NOW + 7 * H)})
 allr = [reel_a, reel_n, reel_soon, car, item("reel")]
 assert feed.mode(True) == "notification" and feed.mode(False) == "automatic"
-assert [i["id"] for i in feed.wrong_mode(allr, NOW, True)] == [reel_a["id"]]  # phone on: the automatic one; the 20-minute one is too close; carousel untouched
+assert [i["id"] for i in feed.wrong_mode(allr, NOW, True)] == [reel_a["id"], car["id"]]  # phone on: the automatic ones (carousels follow it too since 2026-10-23); the 20-minute one is too close
 assert [i["id"] for i in feed.wrong_mode(allr, NOW, False)] == [reel_n["id"]]  # phone off: the notification one (a Reel left in notification mode would never post)
 # the song line: notification mode only, Reels only, cut to 2200 chars, caption itself untouched
 snd = {"artist": "Remi Wolf", "title": "Photo ID"}
