@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Ashe's \"Stop The Wedding!\" is No. 4 on the Spotify US daily chart: 840,139 streams on Oct 28, 2026, up 6 places. Globally it's No. 7 for the week of Oct 22 with 22.8M streams.\n\nAshe is gaining about 605.9K monthly listeners a day (29M as of Oct 30, 2026). The pop single, out Aug 7, was written with Noah Conrad and Annika Bennett.\n\nDoes \"Stop The Wedding!\" hit No. 1? 👇\n\nData: Spotify charts via kworb · Oct 30, 2026\n\n#ashe #stopthewedding #popmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261030-0922-ashe-stop-the-wedding-reel/reel-1793366601.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Ashe"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Ashe",
+  "title": "Stop The Wedding!"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-06",
+ "not_before": null,
+ "added": "2026-10-30T13:24:32Z"
+}
