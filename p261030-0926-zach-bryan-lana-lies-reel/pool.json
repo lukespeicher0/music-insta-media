@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Zach Bryan and Lana Del Rey's \"Lies\" debuted at No. 29 on the Spotify global weekly chart (week of Oct 22, 2026) with 14,835,399 streams. The country duet, out Oct 16, 2026, is track 3 on the EP \"Young Manhood & Other Donatable Organs\", and the two co-wrote it.\n\nLana Del Rey has 73.7M Spotify monthly listeners to Zach Bryan's 28.7M (Oct 30, 2026), and fans are split on her country turn.\n\nLana's country era: in or out? 👇\n\nData: Spotify global weekly chart via kworb, week of Oct 22, 2026; Spotify\n\n#zachbryan #lanadelrey #lies #country",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261030-0926-zach-bryan-lana-lies-reel/reel-1793366849.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "Zach Bryan",
+  "Lana Del Rey"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Zach Bryan",
+  "title": "Lies (feat. Lana Del Rey)"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-07",
+ "not_before": null,
+ "added": "2026-10-30T13:28:15Z"
+}
