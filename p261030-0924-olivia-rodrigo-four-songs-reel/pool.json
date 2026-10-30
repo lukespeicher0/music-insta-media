@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Olivia Rodrigo has 4 songs in the Spotify global top 50: \"the cure\" No. 5, \"expectations\" with Chappell Roan No. 6, \"stupid song\" No. 10 and \"drop dead\" No. 45 (week of Oct 22, 2026).\n\nTogether the four pulled 80.4M streams that week. \"expectations\" is a new entry with 23.6M streams, while \"the cure\" (24.3M) and \"stupid song\" (19.3M, a former No. 1) keep going. The pop star has 72.9M Spotify monthly listeners as of Oct 30, 2026.\n\nRank them: which one is No. 1? 👇\n\nData: Spotify global weekly chart via kworb, week of Oct 22, 2026\n\n#oliviarodrigo #chappellroan #expectations #popmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261030-0924-olivia-rodrigo-four-songs-reel/reel-1793366759.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "milestones",
+ "artists": [
+  "Olivia Rodrigo",
+  "Chappell Roan"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Olivia Rodrigo",
+  "title": "expectations"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-05",
+ "not_before": null,
+ "added": "2026-10-30T13:26:42Z"
+}
