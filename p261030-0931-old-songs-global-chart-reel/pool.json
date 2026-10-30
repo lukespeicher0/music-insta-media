@@ -1,0 +1,44 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Bruno Mars \"Locked out of Heaven\" (2012) is No. 43 on the Spotify global weekly chart, up 15 places, with 13.4M streams for the week of Oct 22, 2026. It sits beside The Police \"Every Breath You Take\" (1983, No. 44), The Killers \"Mr. Brightside\" (2003, No. 30), P!nk \"Just Give Me a Reason\" (2012, No. 20) and Harry Styles \"Sign of the Times\" (2017, No. 38).\n\n\"Every Breath You Take\" is 43 years old and has spent 254 weeks on the chart.\n\nWhich one outlives them all? 👇\n\nData: Spotify global weekly chart via kworb · week of Oct 22, 2026\n\n#brunomars #thepolice #thekillers #mrbrightside #oldsongs",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261030-0931-old-songs-global-chart-reel/reel-1793367115.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "look_back",
+ "artists": [
+  "Bruno Mars",
+  "The Police",
+  "The Killers",
+  "P!nk",
+  "Harry Styles"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Bruno Mars",
+  "title": "Locked out of Heaven"
+ },
+ "silent": true,
+ "fresh_until": "2026-11-08",
+ "not_before": null,
+ "added": "2026-10-30T13:32:43Z"
+}
