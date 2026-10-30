@@ -1,0 +1,42 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Halloween songs are taking over the Spotify chart: Michael Jackson's \"Thriller\" (1982) is back at No. 18 in the US with 556,476 streams on Oct 28, 2026, up 10 places in a day.\n\nRay Parker Jr.'s \"Ghostbusters\" (1984) jumped 23 spots to No. 41 with 455,027 streams, and Bobby \"Boris\" Pickett's \"Monster Mash\" (1962) climbed 25 spots to No. 49 with 430,588.\n\nBest Halloween song ever? 👇\n\nData: Spotify US daily chart via kworb · Oct 28, 2026\n\n#halloweensongs #thriller #michaeljackson #monstermash",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261030-0108-halloween-songs-chart-reel/reel-1793337015.mp4",
+     "metadata": {
+      "thumbnailOffset": 900
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "chart_report",
+ "artists": [
+  "Michael Jackson",
+  "Ray Parker Jr.",
+  "Bobby \"Boris\" Pickett"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Michael Jackson",
+  "title": "Thriller"
+ },
+ "silent": true,
+ "fresh_until": "2026-10-31",
+ "not_before": null,
+ "added": "2026-10-30T13:22:31Z"
+}
