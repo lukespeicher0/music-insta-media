@@ -1,0 +1,42 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "KAROL G's \"BbY WOW\" with Judeline and rusowsky is No. 2 on the Spotify global weekly chart with 35.5M streams (week of Oct 29, 2026), 11 weeks in.\n\nIt reached No. 1 on Spotify's global daily chart on Aug 31, 2026, making Judeline the first Spanish woman to top it.\n\nKAROL G, Judeline or rusowsky: who has the best part? 👇\n\nData: Spotify global weekly chart via kworb · week of Oct 29, 2026\n\n#karolg #judeline #rusowsky #bbywow",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261102-0937-karol-g-bby-wow-story-reel/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "limelight",
+ "artists": [
+  "KAROL G",
+  "Judeline",
+  "rusowsky"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "KAROL G",
+  "title": "BbY WOW"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-08",
+ "not_before": null,
+ "added": "2026-11-02T14:48:26Z"
+}
