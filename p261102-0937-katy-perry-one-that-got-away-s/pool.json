@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Katy Perry's \"The One That Got Away\" (2011) is No. 10 on the Spotify global weekly chart with 18.3M streams (week of Oct 29, 2026).\n\nThe Teenage Dream single blew up on TikTok this year, and TikTok named it its No. 1 global song of the summer 2026. On May 6 Perry passed 80M Spotify monthly listeners, the most she has ever had.\n\nIs \"The One That Got Away\" her best song? 👇\n\nData: Spotify global weekly chart via kworb · week of Oct 29, 2026; TikTok Newsroom\n\n#katyperry #theonethatgotaway #teenagedream",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261102-0937-katy-perry-one-that-got-away-s/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Katy Perry"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Katy Perry",
+  "title": "The One That Got Away"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-08",
+ "not_before": null,
+ "added": "2026-11-02T14:48:19Z"
+}
