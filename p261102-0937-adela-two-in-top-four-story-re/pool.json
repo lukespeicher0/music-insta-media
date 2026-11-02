@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "ADÉLA has two songs in the Spotify global top 4: \"Nicole Kidman\" at No. 3 with 32.4M streams and \"Ain't In LA\" at No. 4 with 25.5M (week of Oct 29, 2026).\n\nThe 22-year-old Slovak singer released her debut album PRIMA on Sep 4, 2026, and is the first Slovak artist to chart on the Billboard Hot 100.\n\nWhich ADÉLA song is better: \"Nicole Kidman\" or \"Ain't In LA\"? 👇\n\nData: Spotify global weekly chart via kworb · week of Oct 29, 2026\n\n#adela #nicolekidman #prima #pop",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261102-0937-adela-two-in-top-four-story-re/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "limelight",
+ "artists": [
+  "ADÉLA"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "ADÉLA",
+  "title": "Nicole Kidman"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-09",
+ "not_before": null,
+ "added": "2026-11-02T14:48:00Z"
+}
