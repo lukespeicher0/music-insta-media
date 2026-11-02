@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Ella Langley's \"Choosin' Texas\" is No. 21 on the Spotify global weekly chart with 15.8M streams (week of Oct 29, 2026), 43 weeks in, and No. 11 on Spotify's US daily chart (Oct 31) after 380 days on it.\n\nThe lead single from her album Dandelion came out in October 2025. By Sep 1, 2026 it had spent 20 weeks at No. 1 on the Billboard Hot 100, the longest run ever for a non-holiday song.\n\nIs \"Choosin' Texas\" the biggest country song ever? 👇\n\nData: Spotify charts via kworb · Oct 29 and Oct 31, 2026; Billboard Hot 100 via Holler\n\n#ellalangley #choosintexas #country",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261102-0952-ella-langley-choosin-texas-sto/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "milestones",
+ "artists": [
+  "Ella Langley"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Ella Langley",
+  "title": "Choosin' Texas"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-08",
+ "not_before": null,
+ "added": "2026-11-02T14:52:38Z"
+}
