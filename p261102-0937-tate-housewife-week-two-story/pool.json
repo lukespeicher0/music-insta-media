@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Tate McRae's \"Housewife\" is No. 1 on the Spotify global weekly chart for a second week: 48.2M streams for the week of Oct 29, 2026, up 9.1M on its first week (39.1M).\n\nThe song came out Oct 15 and leads the No. 2 song, KAROL G's \"BbY WOW\", by 12.7M streams. On the Billboard Hot 100 it debuted at No. 2.\n\nIs \"Housewife\" the song of the year? 👇\n\nData: Spotify global weekly chart via kworb · weeks of Oct 22 and Oct 29, 2026; Billboard Hot 100\n\n#tatemcrae #housewife #pop",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261102-0937-tate-housewife-week-two-story/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "milestones",
+ "artists": [
+  "Tate McRae"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Tate McRae",
+  "title": "Housewife"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-08",
+ "not_before": null,
+ "added": "2026-11-02T14:47:48Z"
+}
