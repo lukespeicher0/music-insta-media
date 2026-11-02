@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Fuerza Regida's \"Suzuki\" (from GTA VI: The Album) jumped 132 places to No. 40 on the Spotify global weekly chart with 13.0M streams, up 4.6M on the week (week of Oct 29, 2026).\n\nRockstar and Atlantic put it out with Cardi B's \"Don't Chart\" as the first songs from the 34-track soundtrack. The game and the full album arrive Nov 19.\n\nIs the GTA VI soundtrack a real hit machine, or just hype? 👇\n\nData: Spotify global weekly chart via kworb · week of Oct 29, 2026\n\n#fuerzaregida #gtavi #gta6 #corridos",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261102-0937-gta-vi-suzuki-story-reel/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Fuerza Regida"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Fuerza Regida",
+  "title": "Suzuki"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-08",
+ "not_before": null,
+ "added": "2026-11-02T14:47:43Z"
+}
