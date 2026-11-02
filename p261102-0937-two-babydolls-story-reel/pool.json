@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Two different songs called \"Babydoll\" are in the Spotify global top 30 (week of Oct 29, 2026). Dominic Fike's is No. 22 with 15.8M streams, 50 weeks in. Jamie Miller's jumped 44 places to No. 30 with 14.3M streams, up 3.7M, in only its 4th week.\n\nMiller's went viral as a dance trend, with celebrities like Meghan Trainor and Jennifer Love Hewitt joining in.\n\nWhich Babydoll is yours: Fike or Miller? 👇\n\nData: Spotify global weekly chart via kworb · week of Oct 29, 2026\n\n#babydoll #dominicfike #jamiemiller",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261102-0937-two-babydolls-story-reel/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "Jamie Miller",
+  "Dominic Fike"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Jamie Miller",
+  "title": "Babydoll"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-08",
+ "not_before": null,
+ "added": "2026-11-02T14:47:54Z"
+}
