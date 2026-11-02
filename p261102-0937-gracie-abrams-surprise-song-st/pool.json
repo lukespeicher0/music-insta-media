@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Gracie Abrams surprise-released \"Here You Come, There You Go\" on Oct 29, 2026, the first song from the deluxe edition of her album Daughter From Hell, out Nov 20 with five new songs.\n\nOn its debut day it entered Spotify's US daily chart at No. 40 with 506,475 streams and the global daily chart at No. 124 with 1.43M. It has 3.26M Spotify streams as of Nov 2 (kworb). Written with Amy Allen and Jim-E Stack, produced by Jim-E Stack.\n\nWill the deluxe be bigger than the album? 👇\n\nData: Spotify daily charts and stream totals via kworb · Nov 2, 2026\n\n#gracieabrams #daughterfromhell #pop",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261102-0937-gracie-abrams-surprise-song-st/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "release_scorecard",
+ "artists": [
+  "Gracie Abrams"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Gracie Abrams",
+  "title": "Here You Come, There You Go"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-19",
+ "not_before": null,
+ "added": "2026-11-02T14:48:06Z"
+}
