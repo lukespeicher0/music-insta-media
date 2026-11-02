@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Justin Bieber and Nicki Minaj's \"Beauty and a Beat\" (2012) is No. 11 on the Spotify global weekly chart with 18.3M streams (week of Oct 29, 2026).\n\nIts 2026 run started after Bieber played it at Coachella on Apr 11, 2026; the song then reached No. 1 on the Billboard Global 200, 14 years after it came out.\n\nIs it a real comeback, or pure nostalgia? 👇\n\nData: Spotify global weekly chart via kworb · week of Oct 29, 2026; Billboard Global 200\n\n#justinbieber #nickiminaj #beautyandabeat",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261102-0937-beauty-and-a-beat-2026-story-r/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "look_back",
+ "artists": [
+  "Justin Bieber",
+  "Nicki Minaj"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Justin Bieber",
+  "title": "Beauty And A Beat"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-08",
+ "not_before": null,
+ "added": "2026-11-02T14:48:13Z"
+}
