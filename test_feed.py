@@ -198,3 +198,10 @@ assert quiet["id"] not in ids(run([quiet])), "silent Reel must not auto-post"
 assert quiet["id"] in ids(run([quiet], phone=True))
 
 print("ok")
+
+# a schedule change moves queued pool posts: off-slot ones > 30 min away go back to the pool, on-slot and imminent ones stay
+_s = {"timezone": "America/New_York", "post_times": ["15:00"], "reel_time": "16:00", "slot_pattern": [[["15:00", "reel"]]], "pattern_anchor": "2026-01-01", "assign_hours": 168}
+_now = dt.datetime(2026, 11, 4, 12, 0, tzinfo=dt.timezone.utc)
+_q = [{"id": "a", "dueAt": "2026-11-04T20:00:00.000Z"}, {"id": "b", "dueAt": "2026-11-04T21:00:00.000Z"}, {"id": "c", "dueAt": "2026-11-04T12:10:00.000Z"}, {"id": "d", "dueAt": "2026-11-04T22:00:00.000Z"}]
+_it = [{"id": x, "sent": {"id": x}} for x in "abc"] + [{"id": "n", "sent": None}]
+assert [i["id"] for i, _ in feed.off_slot(_q, _it, _now, _s)] == ["b"]   # a = 15:00 NY (slot), b = 16:00 NY (off), c = too close, d = not ours

@@ -133,6 +133,13 @@ def wrong_mode(items, now, phone, gap=30):
             and parse(i["sent"]["dueAt"]) > now + dt.timedelta(minutes=gap)]
 
 
+def off_slot(queue, items, now, sched, gap=30):
+    """[(item, Buffer post)] pool posts in Buffer whose time is no longer a slot (the schedule changed) and > gap minutes away: they go back to the pool and the planner re-slots them."""
+    slots = {due for due, _ in slots_between(now, sched, 24 * 30, 0)}
+    sent = {i["sent"]["id"]: i for i in items if i["sent"]}
+    return [(sent[p["id"]], p) for p in queue if p["id"] in sent and parse(p["dueAt"]) > now + dt.timedelta(minutes=gap) and parse(p["dueAt"]) not in slots]
+
+
 # ---------- the pool ----------
 
 def load_pool(root, tz):
@@ -424,6 +431,14 @@ def main(dry=False):
         i["sent"] = {"id": res["post"]["id"], "dueAt": res["post"]["dueAt"], "mode": mode(phone)}
         write(i["dir"] / "sent.json", i["sent"])
         queue.append(res["post"])
+    for i, p in off_slot(queue, items, now, sched):  # the schedule changed: move it to a current slot (re-slotted below, nothing lost)
+        print("off schedule, back in the pool:", i["id"], p["dueAt"], "- dry" if dry else "")
+        if dry:
+            continue
+        delete(p["id"])
+        (i["dir"] / "sent.json").unlink(missing_ok=True)
+        queue = [q for q in queue if q["id"] != p["id"]]
+        i["sent"] = None
     by_sent = {i["sent"]["id"]: i for i in items if i["sent"]}
     pin = sched.get("pinned", {})
 
