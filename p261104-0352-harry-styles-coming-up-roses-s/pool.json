@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Harry Styles \"Coming Up Roses\" is No.36 on Spotify's global daily chart with 1.92M streams on Nov 2, 2026, ahead of \"As It Was\" (No.96, 1.36M). \"Sign of the Times\" is No.34: three Harry songs in the global top 100 on the same day.\n\nIn the US, \"Coming Up Roses\" jumped 62 spots to No.33 (440,641 streams, +41.5%). It is the fourth single from Kiss All the Time, out as a single Oct 30, 2026. \"As It Was\" spent 81 days at No.1 worldwide.\n\nIs \"Coming Up Roses\" the next \"As It Was\"? 👇\n\nData: Spotify daily charts via kworb · Nov 2, 2026\n\n#harrystyles #cominguproses #kissallthetime #pop",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261104-0352-harry-styles-coming-up-roses-s/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "chart_report",
+ "artists": [
+  "Harry Styles"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Harry Styles",
+  "title": "Coming Up Roses"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-10",
+ "not_before": null,
+ "added": "2026-11-04T03:57:43Z"
+}
