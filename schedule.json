@@ -50,8 +50,8 @@
  "pattern_anchor": "2026-10-22",
  "reel_phone_mode": true,
  "timezone": "America/New_York",
- "assign_hours": 72,
- "buffer_limit": 10,
+ "assign_hours": 168,
+ "buffer_limit": 5,
  "promo": {
   "min_organic": 5,
   "min_hours": 48
