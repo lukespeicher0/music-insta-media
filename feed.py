@@ -140,6 +140,13 @@ def off_slot(queue, items, now, sched, gap=30):
     return [(sent[p["id"]], p) for p in queue if p["id"] in sent and parse(p["dueAt"]) > now + dt.timedelta(minutes=gap) and parse(p["dueAt"]) not in slots]
 
 
+def over_limit(queue, items, limit, now, gap=30):
+    """[(item, Buffer post)] the furthest-out pool posts when Buffer holds more than limit (the limit was lowered): they go back to the pool, so what's queued stays current."""
+    sent = {i["sent"]["id"]: i for i in items if i["sent"]}
+    ours = sorted((p for p in queue if p["id"] in sent and parse(p["dueAt"]) > now + dt.timedelta(minutes=gap)), key=lambda p: p["dueAt"], reverse=True)
+    return [(sent[p["id"]], p) for p in ours[:max(0, len(queue) - limit)]]
+
+
 # ---------- the pool ----------
 
 def load_pool(root, tz):
@@ -431,8 +438,10 @@ def main(dry=False):
         i["sent"] = {"id": res["post"]["id"], "dueAt": res["post"]["dueAt"], "mode": mode(phone)}
         write(i["dir"] / "sent.json", i["sent"])
         queue.append(res["post"])
-    for i, p in off_slot(queue, items, now, sched):  # the schedule changed: move it to a current slot (re-slotted below, nothing lost)
-        print("off schedule, back in the pool:", i["id"], p["dueAt"], "- dry" if dry else "")
+    for i, p in off_slot(queue, items, now, sched) + over_limit(queue, items, limit, now):  # the schedule or limit changed: back to the pool, re-slotted below, nothing lost
+        if not i["sent"]:  # both lists can name the same post
+            continue
+        print("off schedule or over the limit, back in the pool:", i["id"], p["dueAt"], "- dry" if dry else "")
         if dry:
             continue
         delete(p["id"])

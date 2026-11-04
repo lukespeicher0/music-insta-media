@@ -205,3 +205,7 @@ _now = dt.datetime(2026, 11, 4, 12, 0, tzinfo=dt.timezone.utc)
 _q = [{"id": "a", "dueAt": "2026-11-04T20:00:00.000Z"}, {"id": "b", "dueAt": "2026-11-04T21:00:00.000Z"}, {"id": "c", "dueAt": "2026-11-04T12:10:00.000Z"}, {"id": "d", "dueAt": "2026-11-04T22:00:00.000Z"}]
 _it = [{"id": x, "sent": {"id": x}} for x in "abc"] + [{"id": "n", "sent": None}]
 assert [i["id"] for i, _ in feed.off_slot(_q, _it, _now, _s)] == ["b"]   # a = 15:00 NY (slot), b = 16:00 NY (off), c = too close, d = not ours
+
+# lowering the limit: the furthest-out pool posts go back to the pool
+_q2 = [{"id": x, "dueAt": f"2026-11-{d}T20:00:00.000Z"} for x, d in (("a", "05"), ("b", "06"), ("c", "07"))]
+assert [i["id"] for i, _ in feed.over_limit(_q2, _it, 2, _now)] == ["c"] and feed.over_limit(_q2, _it, 3, _now) == []
