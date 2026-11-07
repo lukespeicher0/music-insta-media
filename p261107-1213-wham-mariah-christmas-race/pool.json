@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Wham! \"Last Christmas\" is already No.12 on Spotify's US daily chart (629,509 streams, Nov 5, 2026), six spots ahead of Mariah Carey's \"All I Want for Christmas Is You\" at No.18 (552,607).\n\nChristmas is back on Spotify: on Nov 7, Wham! gained 543,812 monthly listeners in a day, the most of any artist. Brenda Lee, Mariah Carey and Michael Bublé are also in the top 5.\n\nAll-time, Mariah still leads: 2.15B streams on Spotify's global weekly chart vs 1.84B for Last Christmas.\n\nWho owns Christmas, Wham! or Mariah?\n\nData: Spotify charts and listeners via kworb · Nov 5-7, 2026\n\n#lastchristmas #mariahcarey #wham #christmasmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261107-1213-wham-mariah-christmas-race/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "Wham!",
+  "Mariah Carey"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Wham!",
+  "title": "Last Christmas"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-14",
+ "not_before": null,
+ "added": "2026-11-07T12:17:11Z"
+}
