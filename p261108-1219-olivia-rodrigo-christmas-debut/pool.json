@@ -1,0 +1,42 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Olivia Rodrigo's first Christmas song \"take me home (4 christmas)\" debuted at No.8 on Spotify's US daily chart with 765,495 streams on day one (Nov 6, 2026).\n\nThat put it above Wham! \"Last Christmas\" (No.12) and Mariah Carey \"All I Want for Christmas Is You\" (No.16) on the same chart. In the UK it entered at No.12, three spots above Last Christmas; globally it debuted at No.42. Mariah's song has now spent 606 days on the US daily chart; Olivia's has one.\n\nWritten with Dan Nigro and Amy Allen and produced by Nigro, it's her first original holiday single.\n\nNew Christmas classic, or a one-season wonder?\n\nData: Spotify daily charts US, UK and global via kworb · Nov 6, 2026\n\n#oliviarodrigo #takemehome #christmasmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261108-1219-olivia-rodrigo-christmas-debut/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "release_scorecard",
+ "artists": [
+  "Olivia Rodrigo",
+  "Mariah Carey",
+  "Wham!"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Olivia Rodrigo",
+  "title": "take me home (4 christmas)"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-14",
+ "not_before": null,
+ "added": "2026-11-08T12:23:28Z"
+}
