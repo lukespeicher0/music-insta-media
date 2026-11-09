@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Michael Jackson's \"Thriller\" jumped 59 places to No.17 on Spotify's global weekly chart (week ending Nov 5, 2026): 16.9M streams, up 6.56M in a week, its highest position in 22 weeks on the chart.\n\nA 1982 song carried by Halloween week, and it brought company: \"Billie Jean\" is No.21 and \"Beat It\" No.48. Michael Jackson has 91.6M monthly listeners on Spotify (Nov 9, 2026).\n\nHalloween song, or a classic that never really left?\n\nData: Spotify global weekly chart via kworb · Nov 5-9, 2026\n\n#michaeljackson #thriller #kingofpop #spotifycharts",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261109-1222-michael-jackson-thriller-peak/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "milestones",
+ "artists": [
+  "Michael Jackson"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Michael Jackson",
+  "title": "Thriller"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-14",
+ "not_before": null,
+ "added": "2026-11-09T12:27:16Z"
+}
