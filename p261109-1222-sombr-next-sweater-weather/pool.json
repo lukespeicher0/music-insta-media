@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "sombr's \"back to friends\" is No.7 on Spotify's global weekly chart (week ending Nov 5, 2026), up two spots in its 85th week on the chart, with 19.8M streams that week and 2.28B chart streams in total.\n\nThe Neighbourhood's \"Sweater Weather\" is still No.15 in its 348th week: 4.39B chart streams. sombr has 55.4M monthly listeners, The Neighbourhood 51.1M (Nov 9, 2026).\n\nIs \"back to friends\" this generation's \"Sweater Weather\"?\n\nData: Spotify global weekly chart and listeners via kworb · Nov 5-9, 2026\n\n#sombr #backtofriends #sweaterweather #theneighbourhood #indie",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261109-1222-sombr-next-sweater-weather/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "sombr",
+  "The Neighbourhood"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "sombr",
+  "title": "back to friends"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-15",
+ "not_before": null,
+ "added": "2026-11-09T12:31:26Z"
+}
