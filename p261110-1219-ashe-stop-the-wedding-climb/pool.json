@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Ashe's \"Stop The Wedding!\" just hit a new peak: No.4 on Spotify's global weekly chart (week ending Nov 5, 2026), and it's the only song in the global top 5 that gained streams.\n\n26.9M streams in a week, up 1.63M, while No.1, 2, 3 and 5 all dropped. Ashe went from 21.2M monthly listeners on Oct 15 to 33.6M on Nov 10. The song is No.3 in the UK and No.13 in the US, title track of her album The Girl of Your Dreams (Atlantic).\n\nTate McRae's \"Housewife\" still leads with 36.3M. Can Ashe reach No.1?\n\nData: Spotify weekly charts via kworb, Spotify listeners · Oct 15-Nov 10, 2026\n\n#ashe #stopthewedding #tatemcrae #popmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261110-1219-ashe-stop-the-wedding-climb/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Ashe",
+  "Tate McRae"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Ashe",
+  "title": "Stop The Wedding!"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-16",
+ "not_before": null,
+ "added": "2026-11-10T12:25:56Z"
+}
