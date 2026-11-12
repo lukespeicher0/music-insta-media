@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Wham!'s \"Last Christmas\" vs Mariah Carey's \"All I Want for Christmas Is You\": on Nov 10, 2026, Wham! was already No.17 on Spotify's global daily chart, 312K streams a day ahead of Mariah at No.34.\n\n2.28M daily streams for Last Christmas, 1.97M for All I Want for Christmas Is You. Wham! went from 18.5M to 21.8M monthly listeners between Nov 7 and Nov 12. But Mariah has spent 86 days at No.1 on the global daily chart. Wham!: 5.\n\nSo who owns Christmas, Wham! or Mariah?\n\nData: Spotify global daily chart via kworb, Spotify listeners · Nov 7-12, 2026\n\n#wham #lastchristmas #mariahcarey #alliwantforchristmasisyou #christmasmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261112-1219-wham-mariah-christmas/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "Wham!",
+  "Mariah Carey"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Wham!",
+  "title": "Last Christmas"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-19",
+ "not_before": null,
+ "added": "2026-11-12T12:23:35Z"
+}
