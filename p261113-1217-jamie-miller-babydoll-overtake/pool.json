@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Jamie Miller's \"Babydoll\" just passed Dominic Fike's \"Babydoll\" on Spotify's global weekly chart: No.13 vs No.28 (week of Nov 5, 2026).\n\nOne week earlier Fike was No.22 and Miller No.30. Miller's jumped 17 places with 17.3M weekly streams, Fike's slipped with 14.9M. Miller went from 9.9M to 16.5M monthly listeners between Oct 15 and Nov 13, and Babydoll hit No.1 in the UK on Oct 23, the first Welsh No.1 in 15 years.\n\nDid the right Babydoll win?\n\nData: Spotify global weekly chart via kworb, Spotify listeners, Official Charts · Oct 15-Nov 13, 2026\n\n#jamiemiller #babydoll #dominicfike #popmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261113-1217-jamie-miller-babydoll-overtake/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "limelight",
+ "artists": [
+  "Jamie Miller",
+  "Dominic Fike"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Jamie Miller",
+  "title": "Babydoll"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-19",
+ "not_before": null,
+ "added": "2026-11-13T12:21:18Z"
+}
