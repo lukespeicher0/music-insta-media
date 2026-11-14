@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Feist's \"My Moon My Man\" (2007) just debuted at No.137 on Spotify's global daily chart with 1,244,057 streams (Nov 12, 2026).\n\nThe spark: Finneas's cover became TikTok's soundtrack for soft launches and couple edits. His version is an Amazon Music Original, so on Spotify the streams go to Feist's original from The Reminder. On the US daily chart it went from No.150 on Nov 10 to No.64 on Nov 12.\n\nCover or original: which one is better?\n\nData: Spotify daily charts via kworb, Nov 10-12, 2026 · newengen TikTok trends, mxdwn\n\n#feist #mymoonmyman #finneas #indiemusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261114-1214-feist-my-moon-my-man/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Feist",
+  "FINNEAS"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Feist",
+  "title": "My Moon My Man"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-19",
+ "not_before": null,
+ "added": "2026-11-14T12:18:46Z"
+}
