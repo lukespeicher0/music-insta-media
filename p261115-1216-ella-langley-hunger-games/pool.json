@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Ella Langley is No.1 on Spotify's US daily chart with \"Choosin' Texas\" (1,009,611 streams, Nov 13, 2026), 393 days after it first charted. It was No.11 on Oct 31.\n\nThe same day, \"Here Then We're Gone\", her song on The Hunger Games: Sunrise on the Reaping (The Album, out Nov 13), debuted at No.55 with 407,293 streams. With \"Be Her\" (No.34) and \"weren't for the wind\" (No.36) that's four Ella Langley songs on the US chart at once. 31.5M monthly listeners.\n\nIs Ella Langley the biggest name in country right now?\n\nData: Spotify US daily chart via kworb, Nov 13, 2026 · Spotify listeners via kworb, Nov 15, 2026\n\n#ellalangley #choosintexas #hungergames #country",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261115-1216-ella-langley-hunger-games/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "milestones",
+ "artists": [
+  "Ella Langley"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Ella Langley",
+  "title": "Here Then We're Gone"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-21",
+ "not_before": null,
+ "added": "2026-11-15T12:21:10Z"
+}
