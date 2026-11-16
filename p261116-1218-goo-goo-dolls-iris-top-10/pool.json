@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "The Goo Goo Dolls' \"Iris\" is No.9 on Spotify's global weekly chart (dated Nov 12, 2026), 28 years after it came out in 1998. 18.1M streams that week, its 167th on the chart, and a tie with its best-ever spot.\n\nIt sits above Justin Bieber's \"Beauty And A Beat\" (No.11) and Katy Perry's \"The One That Got Away\" (No.12). On Nov 11 it was No.6 on the global daily chart. Iris has 3.87B Spotify streams, pushed this year by the '90s-photo trend set to the song.\n\nIs Iris the best '90s song ever?\n\nData: Spotify charts via kworb, Nov 11-15, 2026 · CBC, Forbes\n\n#googoodolls #iris No.90smusic #rock",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261116-1218-goo-goo-dolls-iris-top-10/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "look_back",
+ "artists": [
+  "The Goo Goo Dolls"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "The Goo Goo Dolls",
+  "title": "Iris"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-22",
+ "not_before": null,
+ "added": "2026-11-16T12:23:46Z"
+}
