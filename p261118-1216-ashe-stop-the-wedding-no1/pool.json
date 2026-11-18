@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Ashe's \"Stop The Wedding!\" is No.1 on Spotify's global daily chart (Nov 16, 2026), knocking KAROL G's \"BbY WOW\" off the top.\n\n4,294,699 streams in a day vs 4,209,739 for KAROL G, a gap of about 85K. It's also No.2 in the US and No.2 in the UK. Ashe went from 21.2M monthly listeners on Oct 15 to 36.1M on Nov 18 (the song is from her album The Girl of Your Dreams).\n\nOn the weekly chart (week to Nov 12) it's still No.3: 29.1M vs KAROL G's 33.2M. Does Ashe take the weekly No.1 next?\n\nData: Spotify charts via kworb, Spotify listeners · Oct 15-Nov 18, 2026\n\n#ashe #stopthewedding #karolg #popmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261118-1216-ashe-stop-the-wedding-no1/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Ashe",
+  "KAROL G"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Ashe",
+  "title": "Stop The Wedding!"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-20",
+ "not_before": null,
+ "added": "2026-11-18T12:19:42Z"
+}
