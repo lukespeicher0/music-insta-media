@@ -1,0 +1,42 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Harry Styles wrote \"Coming Up Roses\" as a Christmas song, then dropped the idea after two lines. Now it's racing the real Christmas songs on Spotify.\n\nWeek to Nov 12: Coming Up Roses No.26 with 14.7M global streams, ahead of Mariah Carey's \"All I Want for Christmas Is You\" (No.31, 14.1M) and just behind Wham!'s \"Last Christmas\" (No.19, 15.8M). By the Nov 17 daily chart, both classics had passed it: No.10 and No.17 vs No.36.\n\nThe song is the fourth single (Oct 30, 2026) from Kiss All the Time. Disco, Occasionally.\n\nDoes Coming Up Roses survive Christmas season?\n\nData: Spotify charts via kworb · Nov 12-17, 2026\n\n#harrystyles #cominguproses #lastchristmas #mariahcarey #popmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261119-1215-harry-styles-coming-up-roses-c/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "Harry Styles",
+  "Mariah Carey",
+  "Wham!"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Harry Styles",
+  "title": "Coming Up Roses"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-24",
+ "not_before": null,
+ "added": "2026-11-19T12:20:04Z"
+}
