@@ -1,0 +1,44 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Justice's GTA VI song \"Flower In A Hurricane\" jumped 16 places to No.5 on Spotify's global daily chart on Nov 18, 2026, the day before Grand Theft Auto VI came out.\n\nThe track features Tame Impala, SZA and King Gizzard & The Lizard Wizard and dropped Oct 15 with the GTA VI trailer. Justice also composed the game's original score.\n\nNov 18: 3.29M global streams, 1.02M more than the day before. Justice went from 9.1M Spotify monthly listeners on Oct 19 to 16.3M on Nov 20. Fuerza Regida's \"Suzuki\" from GTA VI: The Album sat at No.9.\n\nDoes GTA VI give Justice a No.1?\n\nData: Spotify charts via kworb, Spotify monthly listeners · Oct 19-Nov 20, 2026\n\n#justice #gtavi #flowerinahurricane #sza #tameimpala",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261120-1218-justice-gta-flower-hurricane/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "limelight",
+ "artists": [
+  "Justice",
+  "Tame Impala",
+  "SZA",
+  "King Gizzard & The Lizard Wizard",
+  "Fuerza Regida"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Justice",
+  "title": "Flower In A Hurricane"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-25",
+ "not_before": null,
+ "added": "2026-11-20T12:27:32Z"
+}
