@@ -1,0 +1,41 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Brenda Lee vs Bobby Helms: two Christmas songs from the 1950s were 2,229 streams apart on Spotify's US daily chart on Nov 18, 2026.\n\n\"Rockin' Around The Christmas Tree\" (recorded Oct 1958, when Lee was 13) No.17 with 609,087 streams. \"Jingle Bell Rock\" (released Nov 28, 1957) No.18 with 606,858.\n\nOn the Billboard Hot 100, Rockin' reached No.1 in December 2023; Jingle Bell Rock peaked at No.2 on the chart dated Dec 27, 2025. Spotify monthly listeners on Nov 20: Brenda Lee 14.3M, Bobby Helms 12M.\n\nWhich one wins December?\n\nData: Spotify US daily chart via kworb, Spotify, Billboard via Wikipedia · Nov 18-20, 2026\n\n#brendalee #rockinaroundthechristmastree #jinglebellrock #bobbyhelms #christmasmusic",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261120-1218-brenda-lee-jingle-bell-rock/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "Brenda Lee",
+  "Bobby Helms"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Brenda Lee",
+  "title": "Rockin' Around The Christmas Tree"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-27",
+ "not_before": null,
+ "added": "2026-11-20T12:27:39Z"
+}
