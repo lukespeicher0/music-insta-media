@@ -1,0 +1,44 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "GTA VI songs ranked by Spotify's global daily chart (Nov 23, 2026): Justice is No.1, and the rest are a long way behind.\n\n\"Flower In A Hurricane\" (Justice with Tame Impala, SZA and King Gizzard, from the score) pulled 5.1M streams. Fuerza Regida's \"Suzuki\" sat at No.8 with 3.1M. Then a gap: Tove Lo's \"Blood In Your Eyes\" jumped 86 places to No.94 (1.36M) and Dua Lipa's \"Go Easy\" climbed 75 to No.113 (1.27M). In the US, Morgan Wallen's \"Last Thing You Need\" was No.35 and Travis Scott's \"Burn This Shit Down\" entered at No.172. GTA VI: The Album (34 tracks) came out Nov 19.\n\nWhat's the best song on the GTA VI soundtrack?\n\nData: Spotify daily charts via kworb, Nov 23, 2026\n\n#gtavi #gta6 #tovelo #dualipa #justice",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261125-1219-gta-vi-songs-ranked/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "head_to_head",
+ "artists": [
+  "Tove Lo",
+  "Dua Lipa",
+  "Justice",
+  "Fuerza Regida",
+  "Morgan Wallen"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Tove Lo",
+  "title": "Blood In Your Eyes (from GTAVI: The Album)"
+ },
+ "silent": false,
+ "fresh_until": "2026-12-01",
+ "not_before": null,
+ "added": "2026-11-25T12:24:17Z"
+}
