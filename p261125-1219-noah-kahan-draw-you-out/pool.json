@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Noah Kahan's \"Draw You Out\" jumped 13 places to No.25 on Spotify's US daily chart (Nov 23, 2026) after The Hunger Games: Sunrise on the Reaping hit cinemas on Nov 20.\n\nThe lead single from the film's soundtrack, written with Aaron Dessner of The National, came out Oct 2. On Nov 23 it pulled 536,815 US streams, up 23.7% in a day, climbed 30 places to No.33 in the UK and 80 places to No.103 globally. It's on Shazam's US Discovery chart too. Same day, Noah Kahan held No.23, No.24 and No.25 in the US with \"Orbiter\", \"Willing and Able\" and \"Draw You Out\".\n\nWill \"Draw You Out\" make the US top 10?\n\nData: Spotify daily charts via kworb, Nov 23, 2026 · Shazam Discovery US, Nov 25, 2026\n\n#noahkahan #drawyouout #hungergames #sunriseonthereaping #folkpop",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261125-1219-noah-kahan-draw-you-out/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Noah Kahan"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Noah Kahan",
+  "title": "Draw You Out"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-30",
+ "not_before": null,
+ "added": "2026-11-25T12:24:10Z"
+}
