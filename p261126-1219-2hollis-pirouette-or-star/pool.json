@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "2hollis Pirouette or Star? His fifth album Pirouette (Nov 11, 2026, Interscope) took him from 4.7M to 5.1M Spotify monthly listeners in two weeks.\n\nPirouette has 16 tracks with writing and production from Mk.gee, cover art by Yoshitaka Amano, and singles Warhorse, Sex and Hurt. The Line of Best Fit gave it 7/10. But his biggest song is still \"poster boy\" from 2025's Star: 231.3M Spotify streams, with \"crush\" next at 62.5M.\n\nPirouette or Star: which 2hollis album is better?\n\nData: Spotify monthly listeners Nov 11 + Nov 26, 2026 · kworb, Nov 23, 2026\n\nNo.2hollis #pirouette #hyperpop #rap",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261126-1219-2hollis-pirouette-or-star/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "limelight",
+ "artists": [
+  "2hollis"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "2hollis",
+  "title": "Warhorse"
+ },
+ "silent": false,
+ "fresh_until": "2026-12-03",
+ "not_before": null,
+ "added": "2026-11-26T12:25:15Z"
+}
