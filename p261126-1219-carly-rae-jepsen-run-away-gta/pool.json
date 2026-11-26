@@ -1,0 +1,40 @@
+{
+ "org": "6ad055959d4f5e38d1dbb75e",
+ "input": {
+  "text": "Carly Rae Jepsen's \"Run Away With Me\" jumped 44 places to No.25 on Spotify's UK daily chart (Nov 24, 2026), 11 years after release, thanks to Grand Theft Auto VI.\n\nThe 2015 E•MO•TION single plays in GTA VI's \"Day Release\" mission and on the in-game pop station Flash FM. It drew 887,970 Spotify streams in a day, up from 110,460 on Nov 20, and close to \"Call Me Maybe\" at 925,529. In 2015 it peaked at No.83 on the Canadian Hot 100.\n\nIs \"Run Away With Me\" better than \"Call Me Maybe\"?\n\nData: Spotify UK daily + song totals via kworb, Nov 24-25, 2026 · Consequence, Nov 25, 2026\n\n#carlyraejepsen #runawaywithme #gta6 #emotion #pop",
+  "channelId": "6ad055fa778b240e2f139a7c",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "assets": [
+   {
+    "video": {
+     "url": "https://lukespeicher0.github.io/music-insta-media/p261126-1219-carly-rae-jepsen-run-away-gta/reel-story.mp4",
+     "metadata": {
+      "thumbnailOffset": 1500
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "reel",
+    "shouldShareToFeed": true
+   }
+  }
+ },
+ "format": "reel",
+ "kind": "organic",
+ "style": "breakout_moment",
+ "artists": [
+  "Carly Rae Jepsen"
+ ],
+ "priority": "normal",
+ "sound": {
+  "artist": "Carly Rae Jepsen",
+  "title": "Run Away With Me"
+ },
+ "silent": false,
+ "fresh_until": "2026-11-29",
+ "not_before": null,
+ "added": "2026-11-26T12:25:08Z"
+}
